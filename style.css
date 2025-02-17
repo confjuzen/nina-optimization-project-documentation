@@ -7,7 +7,7 @@
 @page {
   size: A4;
 }
-#Boutonsgalerie, #Réorganisationtitres, #wave, #Rich, .break{
+#Boutonsgalerie, #Réorganisationtitres, #wave, #Rich, .break, #Déploiement{
   break-before: page;
 }
 h1, .center {
