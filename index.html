@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,370 +8,587 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
     <title>Rapport d’intervention</title>
   </head>
   <body>
     <main>
       <h1>Rapport d’intervention</h1>
-      <a href=""
+      <a
+        class="center"
+        href="https://confjuzen.github.io/nina-optimization-project/"
         >Nina Carducci</a
       >
       <ol>
         <li><a href="#performance">PERFORMANCE</a></li>
         <ol>
-          <li><a href="#Comparatifperformance">Comparatif avant et après optimisation</a></li>
-          <li><a>Détails des optimisations effectuées</a></li>
+          <li>
+            <a href="#Comparatifperformance"
+              >Comparatif avant et après optimisation</a
+            >
+          </li>
+          <li>
+            <a href="#Détailsoptimisations"
+              >Détails des optimisations effectuées</a
+            >
+          </li>
           <ol>
-            <li><a href="#optimisation1">Optimisation Image</a></li>
-            <li><a href="#optimisation2">Optimisation Code</a></li>
+            <li><a href="#Optimisationsimage">Optimisation Image</a></li>
+            <li><a href="#Optimisationscode">Optimisation Code</a></li>
           </ol>
         </ol>
+        <li><a href="#RÉPARATION">RÉPARATION</a></li>
+        <ol>
+          <li>
+            <a href="#navigationgalerie">Barre de navigation de la galerie</a>
+          </li>
+          <li>
+            <a href="#Boutonsgalerie">Boutons de la galerie</a>
+          </li>
+        </ol>
+
         <li><a href="#accessiblite">ACCESSIBILITÉ</a></li>
         <ol>
-          <li><a>Comparatif avant et après optimisation accessiblite</a></li>
-          <li><a>Détails des accessiblite effectuées</a></li>
+          <li>
+            <a href="#Comparatifaccessiblite"
+              >Comparatif avant et après score Google Lighthouse accessiblite</a
+            >
+          </li>
+          <li>
+            <a href="#Détailsaccessiblite"
+              >Détails des accessiblite effectuées</a
+            >
+          </li>
           <ol>
-            <li><a href="#accessiblite">accessiblite Image</a></li>
-            <li><a href="#accessiblite">accessiblite Code</a></li>
+            <li>
+              <a href="#Descripitionelements">Descripition pour les elements</a>
+            </li>
+            <li><a href="#Réorganisationtitres">Réorganisation des titres</a></li>
+            <li><a href="#Problemcontraste">Problem de contraste</a></li>
           </ol>
+          <li><a href="#wave">Wave</a></li>
         </ol>
-        <li><a herf="#seo">S.E.O.</a></li>
+        <li><a href="#seo">S.E.O.</a></li>
         <ol>
-          <li><a>Comparatif avant et après optimisation S.E.O.</a></li>
+          <li>
+            <a>Comparatif avant et après score Google Lighthouse S.E.O.</a>
+          </li>
           <li><a>Détails des optimisations effectuées</a></li>
           <ol>
-            <li><a href="#seo">seo Image</a></li>
-            <li><a href="#seo">seo Code</a></li>
+            <li><a href="#crawlable">Boutons du navbar</a></li>
+            <li><a href="#robots">Fichier robots.txt </a></li>
           </ol>
+          <li><a href="#Rich">Rich results testet Schema</a></li>
+          <li><a href="#twitter">Open Graph et Twitter</a></li>
         </ol>
+        <li>
+          <a href="#conclusion"
+            >Conclusion et Guide pour la Suite</a
+          >
+        </li>
       </ol>
+
+      <!--  page 2 ---------------------------------------------->
       <h2 id="performance">PERFORMANCE</h2>
-      <h3 id="Comparatifperformance">Comparatif avant et après optimisation</h3>
-      
+      <h3 id="Comparatifperformance">
+        Comparatif avant et après optimisation:
+      </h3>
+      <div class="flex beforeafter">
+        <a href="reports/before-performance.html"
+          ><img src="reports/screenshot-before-performance.png"
+        /></a>
+        <a href="reports/after-performance.html"
+          ><img src="reports/Screenshot-after-performance.png"
+        /></a>
+      </div>
+      <h3 id="Détailsoptimisations">Détails des optimisations effectuées:</h3>
+      <h4 id="Optimisationsimage">Optimisations Image:</h4>
+
       <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/1.html"
-          >74</a
-        >
-        <p>Largest Contentful Paint element 16.820 ms</p>
-        <div class="card-content">
-          <h4>Optimisation appliquée :</h4>
-          <li>
-            Modification de la taille et du format de fichier des images en WebP
-            avec compression pour améliorer le temps de chargement.
-          </li>
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/1.html"
+            >Score avant: 74</a
+          ><br />
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/2.html"
+            >Score après: 96</a
+          >
+        </div>
+        <div class="column2">
+          <p>Largest Contentful Paint element 16.820 ms</p>
+          <div class="card-content">
+            <h4>Optimisation appliquée:</h4>
+            <li>
+              Modification de la taille et du format de fichier des images en
+              WebP avec compression pour améliorer le temps de chargement.
+            </li>
+          </div>
         </div>
       </div>
-
+      <h4 id="Optimisationscode">Optimisations Code:</h4>
       <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/2.html"
-          >96</a
-        >
-        <p>
-          Enable text compression, Minify JavaScript, Minify CSS, Reduce unused
-          CSS
-        </p>
-        <div class="card-content">
-          <h4>Optimisation appliquée :</h4>
-          <li>Intégration de "Vite" pour minifier les fichiers .js et .css.</li>
-          <li>Suppression des ressources inutilisées.</li>
-          <li>
-            Hébergement local des fichiers jQuery.js et des polices .woff2 pour
-            éviter les téléchargements externes et accélérer le chargement.
-          </li>
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/2.html"
+            >Score avant: 96</a
+          ><br />
+          <a href="reports/after-performance.html">Score après: 100</a>
+        </div>
+        <div class="column2">
+          <p>
+            Enable text compression, Minify JavaScript, Minify CSS, Reduce
+            unused CSS
+          </p>
+          <div class="card-content">
+            <h4>Optimisation appliquée :</h4>
+            <li>
+              Intégration de "Vite" pour minifier les fichiers .js et .css.
+            </li>
+            <li>Suppression des ressources inutilisées.</li>
+            <li>
+              Hébergement local des fichiers jQuery.js et des polices .woff2
+              pour éviter les téléchargements externes et accélérer le
+              chargement.
+            </li>
+          </div>
         </div>
       </div>
+      <!--------- page 3 ---------------------------------------------->
+      <h2 id="RÉPARATION">RÉPARATION</h2>
 
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/3.html"
-          >99</a
-        >
-        <h4>Score Final Performance.</h4>
-      </div>
+      <h3 id="navigationgalerie">Barre de navigation de la galerie:</h3>
 
-      <h2 id="tittle">RÉPARATION</h2>
-
-      <div class="card">
-        <h3 id="score">IMAGE</h3>
-        <h3 id="changes">PROBLEM</h3>
+      <div class="flex beforeafter">
+        <a href="reports/beforenav.png"><img src="reports/beforenav.png" /></a>
+        <a href="reports/fixnav.png"><img src="reports/fixnav.png" /></a>
       </div>
 
       <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/4.png"
-          >.png</a
-        >
-        <p>
-          La barre de navigation de la galerie ne fonctionne pas correctement.
-          L'élément actif n'est pas mis en focus et il n'y a pas de hover, aussi
-          avec un curseur incorrect.
-        </p>
-        <div class="card-content">
-          <h4>Ajout CSS:</h4>
-          <pre><code class="language-css line-numbers">
-            .nav-link:hover,
-            .active-tag {
-              background-color: #beb45a !important;
-              color: #fff !important;
-              cursor: pointer !important;
-              border-radius: 0.25rem !important;
-            }
+        <div class="column12">
+          <p>
+            La barre de navigation de la galerie ne fonctionne pas correctement.
+            L'élément actif n'est pas mis en focus et il n'y a pas de hover,
+            aussi avec un curseur incorrect.
+          </p>
+          <div class="card-content">
+            <h4>Ajout CSS:</h4>
+            <pre><code class="language-css line-numbers">
+.nav-link:hover,
+.active-tag {
+  background-color: #beb45a !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  border-radius: 0.25rem !important;
+}
             </code>
           </pre>
+          </div>
         </div>
       </div>
-
+      <!--------- page 4 ---------------------------------------------->
+      <h3 id="Boutonsgalerie">Boutons de la galerie:</h3>
+      <div class="flex beforeafter">
+        <a href="reports/nextmodal.png"><img src="reports/nextmodal.png" /></a>
+      </div>
       <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/5.png"
-          >.png</a
-        >
-        <p>
-          Il y a un souci avec les boutons de la galerie : il n'y a pas de
-          modification d'image avec les boutons avant et après.
-        </p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
+        <div class="column12">
           <p>
-            Le maugallery.js a été modifié, j'ai comparé le code avec le code
-            originel de
-            <a
-              href="https://www.jqueryscript.net/gallery/Filterable-Bootstrap-Gallery-Lightbox-mauGallery.html"
-              >jqueryscript.net</a
-            >
+            Il y a un souci avec les boutons de la galerie : il n'y a pas de
+            modification d'image avec les boutons avant et après.
           </p>
-          <pre><code class="language-css line-numbers">
-              //AVANT
-              if ($(activeImage).attr("src") === $(this).attr("src")) {
-                index = i;
-              };
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <p>
+              Le maugallery.js a été modifié, j'ai comparé le code avec le code
+              originel de
+              <a
+                href="https://www.jqueryscript.net/gallery/Filterable-Bootstrap-Gallery-Lightbox-mauGallery.html"
+                >jqueryscript.net</a
+              >
+            </p>
+            <pre><code class="language-css line-numbers">
+//AVANT
+if ($(activeImage).attr("src") === $(this).attr("src")) {
+  index = i;
+}
 
-              //APRES
-              if ($(activeImage).attr("src") === $(this).attr("src")) {
-                index = i - 1;
-              };
+//APRES
+if ($(activeImage).attr("src") === $(this).attr("src")) {
+  index = i - 1;
+};
             </code>
           </pre>
+          </div>
         </div>
       </div>
 
-      <h2 id="ceo">C.E.O.</h2>
-
-      <div class="card">
-        <h3 id="score">SCORE</h3>
-        <h3 id="changes">PROBLEM</h3>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/10.html"
-          >83</a
-        >
-        <p>Links are not crawlable</p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Changer les boutons du navbar de la galerie de liens "a" en
-            "button".
-          </li>
-        </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/11.html"
-          >92</a
-        >
-        <p>robots.txt is not valid</p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Ajout d'un fichier robots.txt valide pour guider les moteurs de
-            recherche.
-          </li>
-        </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/12.html"
-          >100</a
-        >
-        <h4>Score Final C.E.O.</h4>
-      </div>
-
-      <h2 id="tittle">RICH RESULTS TEST</h2>
-
-      <div class="card">
-        <a
-          href="https://search.google.com/test/rich-results/result?id=HlpUGPT6f5X-qfFaLDW0bg"
-          >Resultat</a
-        >
-        <p>No items detected</p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Ajout d'un script application/ld+json conforme à
-            <a
-              href="https://validator.schema.org/#url=https%3A%2F%2Fnina-carducci.confjuzen.com%2F"
-            >
-              Schema.org
-            </a>
-            et validé avec
-            <a
-              href="https://search.google.com/test/rich-results/result?id=VZarILMGNHFG8Bd9QvimjA"
-            >
-              Google Rich results test</a
-            >.
-          </li>
-        </div>
-      </div>
-
-      <h2 id="tittle">OPEN GRAPH ET TWITTER</h2>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/14.png"
-          >X</a
-        >
-        <p>
-          Lorsque je partage un lien vers un site Web sur les réseaux sociaux,
-          il n'y a pas de carte d'aperçu, juste un lien.
-        </p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Ajout des balises "meta tags" Open Graph et Twitter Cards pour un
-            meilleur affichage des liens partagés sur les réseaux sociaux.
-          </li>
-          <p>
-            Vérification effectuée avec
-            <a
-              href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png"
-              >X</a
-            >
-            et
-            <a
-              href="https://www.opengraph.xyz/url/https%3A%2F%2Fnina-carducci.confjuzen.com"
-              >Open Graph Preview</a
-            >
-          </p>
-        </div>
-      </div>
+      <!--------- page 5 ---------------------------------------------->
 
       <h2 id="accessiblite">ACCESSIBILITÉ</h2>
 
-      <div class="card">
-        <h3 id="score">SCORE</h3>
-        <h3 id="changes">PROBLEM</h3>
+      <h3 id="Comparatifaccessiblite">
+        Comparatif avant et après score Google Lighthouse accessiblite:
+      </h3>
+
+      <div class="flex beforeafter">
+        <a href="reports/assebilitybefore.png"
+          ><img src="reports/assebilitybefore.png"
+        /></a>
+        <a href="reports/acssebilityafter.png"
+          ><img src="reports/acssebilityafter.png"
+        /></a>
       </div>
 
+      <h3 id="Détailsaccessiblite">Détails des accessiblite effectuées:</h3>
+
+      <h4 id="Descripitionelements">Descripition pour les elements:</h4>
+
       <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/6.html"
-          >70</a
-        >
-        <p>
-          Image elements do not have [alt] attributes, Document doesn't have a
-          title element
-        </p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <ul>
-            <p>Ajouter des descripition pour touts les elements:</p>
-            <li>Ajout d'une description (alt) à toutes les images.</li>
-            <li>Ajout d'un titre (title) aux boutons et liens.</li>
-            <li>Ajout d'attributs for aux labels des champs de formulaire.</li>
-            <li>Remplacement des "div" par "article" pour l'article.</li>
-            <li>Ajout de lang="fr" pour la langue du site.</li>
-            <li>
-              Ajout d'un "title" et d'une balise "meta description" pour le
-              référencement.
-            </li>
-          </ul>
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/6.html"
+            >Score avant: 70</a
+          ><br />
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/7.html"
+            >Score après: 94</a
+          >
         </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/7.html"
-          >94</a
-        >
-        <p>Heading elements are not in a sequentially-descending order</p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Réorganisation des niveaux de titres (h1 > h2 > h3...) pour
-            respecter la hiérarchie logique.
-          </li>
-        </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/8.html"
-          >96</a
-        >
-        <p>
-          Background and foreground colors do not have a sufficient contrast
-          ratio.
-        </p>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Modification de la couleur du bouton de la galerie en #B35D1E pour
-            garantir un bon contraste.
-          </li>
-        </div>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/9.html"
-          >100</a
-        >
-        <h4>Score Final Accessibilité Lighthouse.</h4>
-      </div>
-
-      <div class="card">
-        <a
-          href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png"
-          >wave</a
-        >
-        <ul>
-          <li>2 contrast errors</li>
-          <li>4 alerts</li>
-          <li>19 features</li>
-          <li>13 stuctual elements</li>
-          <li>10 ARIA</li>
-        </ul>
-        <div class="card-content">
-          <h4>Correction appliquée :</h4>
-          <li>
-            Suppression du texte "précédent/suivant" qui était en transparence.
-          </li>
-          <li>Modification des alt des images pour éviter les doublons.</li>
-          <li>
-            Suppression du z-index="-1" sur la galerie pour améliorer la
-            navigation au clavier.
-          </li>
-          <li>
-            Ajout des balises "header" et "main" pour les lecteurs d’écran.
-          </li>
+        <div class="column2">
           <p>
-            Verifie avec
-            <a
-              href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/17.png"
-              >wave</a
-            >.
+            Names and labels: Image elements do not have [alt] attributes,
+            Document doesn't have a title element, Document doesn't have a
+            "title" element, ect...
           </p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <ul>
+              <p>Ajouter des descripition pour touts les elements:</p>
+              <li>Ajout d'une description (alt) à toutes les images.</li>
+              <li>Ajout d'un titre (title) aux boutons et liens.</li>
+              <li>
+                Ajout d'attributs for aux labels des champs de formulaire.
+              </li>
+              <li>Remplacement des "div" par "article" pour l'article.</li>
+              <li>Ajout de lang="fr" pour la langue du site.</li>
+              <li>
+                Ajout d'un "title" et d'une balise "meta description" pour le
+                référencement.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <h2 id="tittle">FINAL</h2>
 
+      <h4 id="Réorganisationtitres">Réorganisation des titres:</h4>
+      <div class="card">
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/7.html"
+            >Score avant: 94</a
+          ><br />
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/8.html"
+            >Score après: 96</a
+          >
+        </div>
+        <div class="column2">
+          <p>Heading elements are not in a sequentially-descending order</p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Réorganisation des niveaux de titres (h1 > h2 > h3...) pour
+              respecter la hiérarchie logique.
+            </li>
+          </div>
+        </div>
+      </div>
+
+
+
+      <h4 id="Problemcontraste">Problem de contraste:</h4>
+
+
+      <div class="flex beforeafter">
+        <a href="reports/contrastbefor.png"
+          ><img src="reports/contrastbefor.png"
+        /></a>
+        <a href="reports/contrastafter.png"
+          ><img src="reports/contrastafter.png"
+        /></a>
+      </div>
+
+      <div class="card">
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/8.html"
+            >Score avant: 96</a
+          ><br />
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/9.html"
+            >Score après: 100</a
+          >
+        </div>
+        <div class="column2">
+          <p>
+            Background and foreground colors do not have a sufficient contrast
+            ratio.
+          </p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Modification de la couleur du bouton de la galerie en #B35D1E pour
+              garantir un bon contraste.
+            </li>
+          </div>
+        </div>
+      </div>
+
+
+      <h3 id="wave">Wave:</h3>
+      <div class="flex beforeafter">
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/15.png"
+          ><img src="reports/wavebefore.png"
+        /></a>
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/17.png"
+          ><img src="reports/waveafter.png"
+        /></a>
+      </div>
+      <div class="card">
+        <div class="column12">
+          <p>Plusieurs points ont été relevés pouvant impacter l’expérience utilisateur, notamment pour les personnes utilisant des technologies d’assistance :<br>
+            Contraste insuffisant : Deux erreurs de contraste ont été détectées.<br>
+            Problèmes d’alternatives textuelles : Des alertes ont été générées en raison d’attributs alt d’images inappropriés ou en double.<br>
+            Structure du site : Certains éléments structurels (comme des balises manquantes) compliquaient la navigation et l’interprétation du contenu.<br>
+            Navigation et interaction : La présence d’un z-index="-1" sur la galerie empêchait une navigation fluide au clavier.
+          </p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Suppression du texte "précédent/suivant" qui était en transparence.
+            </li>
+            <li>Modification des alt des images pour éviter les doublons.</li>
+            <li>
+              Suppression du z-index="-1" sur la galerie pour améliorer la
+              navigation au clavier.
+            </li>
+            <li>
+              Ajout des balises "header" et "main" pour les lecteurs d’écran.
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="seo">S.E.O.</h2>
+      <h3 id="seo">Comparatif avant et après score Google Lighthouse S.E.O.:</h3>
+      <p>Des problèmes dega corrigés lors des optimisations d’accessibilité :</p>
+        <li>Absence de balise</li>
+        <li>Images sans attribut alt, ect..</li>
+
+      <div class="flex beforeafter">
+        <a href="reports/seoafteracseebitly.html"
+          ><img src="reports/ceobefore.png"
+        /></a>
+        <a href="reports/final.html"
+          ><img src="reports/seoafter.png"
+        /></a>
+      </div>
+      <h3 id="crawlable">Boutons du navbar:</h3>
+
+      <div class="card">
+        <div class="column1">
+          <a
+            href="reports/10.html"
+            >Score avant: 83</a
+          ><br />
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/11.html"
+            >Score après: 92</a
+          >
+        </div>
+        <div class="column2">
+          <p>Links are not crawlable</p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Changer les boutons du navbar de la galerie de liens "a" en
+              "button".
+            </li>
+          </div>
+        </div>
+      </div>
+      <h3 id="robots">Fichier robots.txt :</h3>
+
+      <div class="card">
+        <div class="column1">
+          <a
+            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/11.html"
+            >Score avant: 92</a
+          ><br />
+          <a
+            href="reports/final.html"
+            >Score après: 100</a
+          >
+        </div>
+        <div class="column2">
+          <p>robots.txt is not valid</p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Ajout d'un fichier robots.txt valide pour guider les moteurs de
+              recherche.
+            </li>
+          </div>
+        </div>
+      </div>
+      <h3 id="Rich">Rich results test et Schema</h2>
+
+        <div class="flex beforeafter">
+          <a href="https://search.google.com/test/rich-results/result?id=HlpUGPT6f5X-qfFaLDW0bg"
+            ><img src="reports/richbefore.png"
+          /></a>
+          <a href="https://search.google.com/test/rich-results/result?id=VZarILMGNHFG8Bd9QvimjA"
+            ><img src="reports/richafter.png"
+          /></a>
+        </div>
+        <div class="flex beforeafter">
+          <a href="https://validator.schema.org/#url=https%3A%2F%2Fnina-carducci.github.io%2F"
+            ><img src="reports/shemabefore.png"
+          /></a>
+          <a href="https://validator.schema.org/#url=https%3A%2F%2Fconfjuzen.github.io%2Fnina-optimization-project%2F"
+            ><img src="reports/shemaafter.png"
+          /></a>
+        </div>
+
+      <div class="card">
+        <div class="column12">
+        <p>La page ne contenait pas de méta description, ce qui réduisait sa visibilité et son attractivité dans les résultats de recherche.</p>
+        <div class="card-content">
+          <h4>Ajout d’une méta description optimisée pour améliorer le référencement et l’engagement des utilisateurs.</h4>
+          <pre><code class="language-html line-numbers ">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Nina Carducci",
+  "description": "Photographie professionnel spécialisé dans les 
+    mariages, concerts, portraits et événements d'entreprise.",
+  "url": "https://nina-carducci.confjuzen.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "68 avenue Alsace-Lorraine",
+    "addressLocality": "Bordeaux",
+    "addressRegion": "Garonne",
+    "postalCode": "33200",
+    "addressCountry": {
+      "@type": "Country",
+      "name": "FR"    }},
+  "founder": {
+    "@type": "Person",
+    "name": "Nina Carducci",
+    "jobTitle": "Photographie professionnel",
+    "email": "contact@nina-carducci.confjuzen.com",
+    "telephone": "+335 56 67 78 89"   },
+  "telephone": "+335 56 67 78 89",
+  "openingHours": "Mo-Fr 10:00-19:00",
+  "priceRange": "€€",
+</code></pre></div></div></div>
+<div class="card-content break"><pre><code class="language-html line-numbers ">
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Cash, Credit Card, PayPal",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+335 56 67 78 89",
+    "email": "contact@nina-carducci.confjuzen.com"
+  },
+  "sameAs": [
+    "https://www.instagram.com/ninacarducci/",
+    "https://ninacarducci.github.io/",
+    "https://www.github.com/ninacarducci"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services de photographie",
+    "itemListElement": [{
+        "@type": "Offer",
+        "name": "Photographie de mariage",
+        "description": "Reportage photo pour mariages, 
+          engagement et cérémonies.",
+        "offeredBy": {
+          "@type": "Person",
+          "name": "Nina Carducci"   }},{
+        "@type": "Offer",
+        "name": "Photographie de concerts",
+        "description": "Capturer les meilleurs moments
+          des spectacles live et festivals.",
+        "offeredBy": {
+          "@type": "Person",
+          "name": "Nina Carducci"   }},{
+        "@type": "Offer",
+        "name": "Portraits professionnels",
+        "description": "Shooting en studio ou en 
+          extérieur pour book et CV.",
+        "offeredBy": {
+          "@type": "Person",
+          "name": "Nina Carducci"   }},{
+        "@type": "Offer",
+        "name": "Événements d'entreprise",
+        "description": "Photographie pour conférences, 
+          séminaires et networking.",
+        "offeredBy": {
+          "@type": "Person",
+          "name": "Nina Carducci"   }}]}}</code></pre>
+      </div>
+
+
+
+
+
+      <h3 id="twitter" class="break">Open Graph et Twitter</h3>
+      <div class="flex beforeafter">
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/14.png"
+          ><img src="reports/twitterbefore.png"
+        /></a>
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png"
+          ><img src="https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png"
+        /></a>
+      </div>
+        <div class="card">
+          <div class="column12">
+          <p>
+            Lorsque je partage un lien vers un site Web sur les réseaux sociaux,
+            il n'y a pas de carte d'aperçu, juste un lien.
+          </p>
+          <div class="card-content">
+            <h4>Correction appliquée :</h4>
+            <li>
+              Ajout des balises "meta tags" Open Graph et Twitter Cards pour un
+              meilleur affichage des liens partagés sur les réseaux sociaux.
+            </li>
+            <p>
+              Vérification effectuée avec
+              <a
+                href="https://www.opengraph.xyz/url/https%3A%2F%2Fnina-carducci.confjuzen.com"
+                >Open Graph Preview</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 id="conclusion">Conclusion et Guide pour la Suite</h2>
+      <p>Les optimisations réalisées ont amélioré significativement les performances, l'accessibilité et le référencement du site, garantissant une meilleure expérience utilisateur et une visibilité accrue sur les moteurs de recherche. Grâce aux ajustements de la structure du site, des images et des métadonnées, le site est désormais mieux référencé et plus accessible aux personnes utilisant les technologies d'assistance. Quelques étapes restent cependant à suivre pour personnaliser davantage le projet et assurer un bon déploiement.</p>
+      <h3>Recommandation : Obtenir un Domaine Personnalisé</h3>
+      <p>Le site est actuellement accessible via nina-carducci.github.io, ce qui est fonctionnel mais peut sembler moins professionnel. Il est recommandé d’acheter un domaine personnalisé pour plusieurs raisons :</p>
+      <ul>
+        <li>Meilleure crédibilité : Un domaine propre donne une impression plus professionnelle.</li>
+        <li>Contrôle total : Possibilité d’héberger ailleurs sans dépendre de GitHub.</li>
+        <li>Meilleur SEO : Un domaine propre est mieux indexé et plus facile à retenir.</li>
+        <li>Utilisation d’un e-mail pro : Exemple : <a href="https://domains.cloudflare.com/?domain=nina+carducci">contact@ninacarducci.com</a> ou <a href="https://domains.cloudflare.com/?domain=carducciphoto">nina@carducciphoto.com</a> au lieu de gmail.com.</li>
+      </ul>
+      
+      
       <div class="card" id="dp">
         <h3>
           <a
