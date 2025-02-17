@@ -548,7 +548,7 @@ if ($(activeImage).attr("src") === $(this).attr("src")) {
       <h3 id="twitter" class="break">Open Graph et Twitter</h3>
       <div class="flex beforeafter">
         <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/14.png"
-          ><img src="reports/twitterbefore.png"
+          ><img src="https://confjuzen.github.io/nina-optimization-project-documentation/reports/14.png"
         /></a>
         <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png"
           ><img src="https://confjuzen.github.io/nina-optimization-project-documentation/reports/16.png"
@@ -578,6 +578,14 @@ if ($(activeImage).attr("src") === $(this).attr("src")) {
       </div>
 
       <h2 id="conclusion">Conclusion et Guide pour la Suite</h2>
+      <div class="flex beforeafter">
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/1.html"
+          ><img src="https://confjuzen.github.io/nina-optimization-project-documentation/reports/1.html"
+        /></a>
+        <a href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/final.html"
+          ><img src="https://confjuzen.github.io/nina-optimization-project-documentation/reports/final.html"
+        /></a>
+      </div>
       <p>Les optimisations réalisées ont amélioré significativement les performances, l'accessibilité et le référencement du site, garantissant une meilleure expérience utilisateur et une visibilité accrue sur les moteurs de recherche. Grâce aux ajustements de la structure du site, des images et des métadonnées, le site est désormais mieux référencé et plus accessible aux personnes utilisant les technologies d'assistance. Quelques étapes restent cependant à suivre pour personnaliser davantage le projet et assurer un bon déploiement.</p>
       <h3>Recommandation : Obtenir un Domaine Personnalisé</h3>
       <p>Le site est actuellement accessible via nina-carducci.github.io, ce qui est fonctionnel mais peut sembler moins professionnel. Il est recommandé d’acheter un domaine personnalisé pour plusieurs raisons :</p>
@@ -587,18 +595,34 @@ if ($(activeImage).attr("src") === $(this).attr("src")) {
         <li>Meilleur SEO : Un domaine propre est mieux indexé et plus facile à retenir.</li>
         <li>Utilisation d’un e-mail pro : Exemple : <a href="https://domains.cloudflare.com/?domain=nina+carducci">contact@ninacarducci.com</a> ou <a href="https://domains.cloudflare.com/?domain=carducciphoto">nina@carducciphoto.com</a> au lieu de gmail.com.</li>
       </ul>
-      
-      
-      <div class="card" id="dp">
-        <h3>
-          <a
-            class="final"
-            href="https://confjuzen.github.io/nina-optimization-project-documentation/reports/13.html"
-            >Dernier Lighthous
-            https://confjuzen.github.io/nina-optimization-project-documentation/Report</a
-          >
-        </h3>
-      </div>
+      <h3>Déploiement du site</h3>
+      <p>Le site utilise GitHub Pages pour l’hébergement statique. Pour mettre à jour les modifications et les publier :</p>
+      <ol>
+        <li><h4>Se connecter à GitHub et VScode avec son compte, et installer localment.</h4>
+          <p>aller sure <a href="https://github.com/confjuzen/nina-optimization-project">mon github, puit Forker le dépôt</a> </p>
+          <pre><code class="language-sh">
+// dans le terminal de vs code
+
+git clone https://github.com/nina-carducci/nina-optimization-project.git Nouveau-Site
+cd Nouveau-Site
+npm install</code></pre>
+        </li>
+        <li><h4>Modifier les meta email et domaine, (en haut de la page index.html)</h4>
+        </li>
+        <li><h4>Déployer sur GitHub Pages:</h4>
+          <pre><code class="language-sh">
+npm run build
+git commit -a -m Déployer
+git push
+git subtree push --prefix dist origin gh-pages</code></pre>
+        </li>
+        <li><h4>Configurer sur GitHub Pages</h4>
+          <p>Aller dans Settings > Pages du dépôt GitHub.<br>
+            Sélectionner Deploy from branch et choisir la branche gh-pages.<br>
+            Enregistrer et attendre quelques minutes que GitHub Pages génère le site.</p>
+        </li>
+      </ol>
+
     </main>
   </body>
 </html>
