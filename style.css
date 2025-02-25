@@ -85,6 +85,18 @@ br {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+table {
+  border: solid 2px #1f1d2e;
+  border-collapse: collapse;
+  border-radius: 10px !important;
+
+
+}
+ th, td{
+  padding: 5px;
+  border: solid 1px #1f1d2e;
+  border-collapse: collapse;
+}
 li {
   margin: 10px 20px;
 }
